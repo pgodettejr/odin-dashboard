@@ -22,6 +22,8 @@ body {
   color: black;
 }
 
+/* Style all icons within the container the same way using CSS tech "ending in icon" */
+
 .heading {
   grid-column: 2;
   grid-row: 1;
@@ -46,4 +48,23 @@ body {
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Add CSS styling to the sections under main.  */
+/* See HTML for announcement & trending card styling differences */
+
+.projects .card {
+  background-color: #FFFFFF;
+  color: black;
+  height: 200px;
+}
+
+.card p {
+  color: black;
+  font-weight: normal;
+  font-size: 14px;
+}
+  
+.card .title {
+  font-size: 18px;
 }
