@@ -80,7 +80,7 @@ body {
   color: black;
   height: 200px;
   border-radius: 8px;
-  /* gap: 4px; */
+  margin: 8px;
 }
 
 .card p {
