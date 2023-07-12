@@ -10,7 +10,7 @@ body {
 .container {
   display: grid;
   grid-template: 0.5fr 3.5fr / 0.5fr 2.5fr 1fr;
-  gap: 4px;
+  /* gap: 4px; */
 }
 
 .container div {
@@ -23,9 +23,13 @@ body {
 
 /* Style all icons within the container the same way using Attribute Selector "ending in/containing icon" or give the icons a class */
 
+/* Might be best to flexbox the heading instead of grid. With grid, the right side has to start from the end. Bottom-left would have addt'l space.  */
 .heading {
   grid-column: 2 / span 2;
   grid-row: 1;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
 /* Add CSS styling to the sections under the heading  */
@@ -68,12 +72,15 @@ body {
 }
 
 /* Add CSS styling to the sections under main.  */
+/* Style favorite, view and share icons in the Projects cards?  */
 /* See HTML for announcement & trending card styling differences */
 
 .projects .card {
   background-color: #FFFFFF;
   color: black;
   height: 200px;
+  border-radius: 8px;
+  /* gap: 4px; */
 }
 
 .card p {
