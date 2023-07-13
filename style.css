@@ -109,15 +109,23 @@ img[alt*="icon"] {
 .announcements .card {
   background-color: #FFFFFF;
   color: black;
-  height: 200px;
+  height: 300px;
   border-radius: 8px;
   margin: 8px;
 }
 
-/* Line break CSS goes here? Is this even the right way to target the paragraph? */
+/* Line break CSS goes here? Is this even the right way to target the paragraph?
 .announcements .card:nth-child(even)::after {
   margin-bottom: 1em;
   line-height: 1.7em;
   background: linear-gradient(180deg, #000 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
   background-size: 100% 1.7em;
+} */
+
+.trending .card {
+  background-color: #FFFFFF;
+  color: black;
+  height: 300px;
+  border-radius: 8px;
+  margin: 8px;
 }
