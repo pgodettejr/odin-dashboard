@@ -21,7 +21,12 @@ body {
   color: black;
 }
 
-/* Style all icons within the container the same way using Attribute Selector "ending in/containing icon" or give the icons a class */
+/* If this doesn't work, give the icons a class
+
+img[alt*="icon"] {
+  color: #FFFFFF
+} */
+
 
 /* Might be best to flexbox the heading instead of grid. With grid, the right side has to start from the end. Bottom-left would have addt'l space.  */
 .heading {
@@ -54,6 +59,10 @@ body {
 /* Add CSS styling to the sections under the sidebar  */
 .sidebar .dashboard {
   color: #FFFFFF;
+}
+
+.sidebar img[alt*="icon"] {
+  color: #FFFFFF
 }
 
 .sidebar ul {
@@ -92,4 +101,20 @@ body {
 .card .title {
   font-size: 18px;
   font-weight: bold;
+}
+
+.announcements .card {
+  background-color: #FFFFFF;
+  color: black;
+  height: 200px;
+  border-radius: 8px;
+  margin: 8px;
+}
+
+/* Line break CSS goes here? Is this even the right way to target the paragraph? */
+.announcements .card:nth-child(even)::after {
+  margin-bottom: 1em;
+  line-height: 1.7em;
+  background: linear-gradient(180deg, #000 1px, rgba(0,0,0,0) 1px, rgba(0,0,0,0) 100%);
+  background-size: 100% 1.7em;
 }
