@@ -31,8 +31,6 @@ img[alt="profile-pic"] {
   width: 80px;
 }
 
-
-/* Might be best to flexbox the heading instead of grid. With grid, the right side has to start from the end. Bottom-left would have addt'l space.  */
 /* box-shadow needs to be adjusted to better match example regardless */
 .heading {
   grid-column: 2 / span 2;
@@ -130,19 +128,24 @@ img[alt="profile-pic"] {
   gap: 15px;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 2fr 1fr;
 }
 
 /* Add CSS styling to the sections under main.  */
 /* Style favorite, view and share icons in the Projects cards?  */
 /* See HTML for announcement & trending card styling differences */
 
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 2fr));;
+  gap: 32px;
+}
+
 .projects .card {
   background-color: #FFFFFF;
   color: black;
   height: 200px;
   border-radius: 8px;
-  margin: 8px;
 }
 
 /* The buttons no longer highlight when I add this. Do they even work?
@@ -162,12 +165,17 @@ img[alt="profile-pic"] {
   font-weight: bold;
 }
 
+/* .announce-trends {
+  display: grid;
+  grid-template-rows: 1fr;
+} */
+
 .announcements .card {
   background-color: #FFFFFF;
   color: black;
   height: 300px;
   border-radius: 8px;
-  margin: 8px;
+  margin-top: 8px;
 }
 
 /* Line break CSS goes here? Is this even the right way to target the paragraph?
@@ -180,5 +188,17 @@ img[alt="profile-pic"] {
   color: black;
   height: 300px;
   border-radius: 8px;
-  margin: 8px;
+  margin-top: 8px;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+.trending .content {
+  flex: 1;
+  padding: 0 1em 0;
+}
+
+.trending .img {
+  flex: 1;
 }
