@@ -43,7 +43,6 @@ img[alt="profile-pic"] {
   grid-template-columns: 3fr 1fr;
 }
 
-/* Add CSS styling to the sections under the heading  */
 .search #search-text {
   background-color: #EEE;
   width: 60%;
@@ -86,6 +85,7 @@ img[alt="profile-pic"] {
   font-weight: 700;
 }
 
+/* Try to match the blue color better with the assignment example */
 .sidebar {
   background-color: skyblue;
   grid-column: 1;
@@ -93,7 +93,6 @@ img[alt="profile-pic"] {
   /* gap: 10px; */
 }
 
-/* Add CSS styling to the sections under the sidebar  */
 .sidebar .dashboard {
   color: #FFFFFF;
   margin-bottom: 0.5em;
@@ -121,6 +120,7 @@ img[alt="profile-pic"] {
   margin-bottom: 20px;
 }
 
+/* Try to match the background color better with the assignment example. ALL cards in this section need a box shadow */
 .main {
   background-color: #BCCBDE;
   grid-column: 2 / span 2;
@@ -131,7 +131,6 @@ img[alt="profile-pic"] {
   grid-template-columns: 2fr 1fr;
 }
 
-/* Add CSS styling to the sections under main.  */
 /* Style favorite, view and share icons in the Projects cards?  */
 /* See HTML for announcement & trending card styling differences */
 
@@ -183,6 +182,7 @@ img[alt="profile-pic"] {
   border-bottom: 1px solid #333;
 } */
 
+/* Modify text sizing and position text in the center; similar to bottom-left section in Heading */
 .trending .card {
   background-color: #FFFFFF;
   color: black;
