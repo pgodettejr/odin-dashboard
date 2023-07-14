@@ -46,14 +46,20 @@ img[alt="profile-pic"] {
 }
 
 /* Add CSS styling to the sections under the heading  */
+.search #search-text {
+  background-color: #EEE;
+  width: 60%;
+  border-radius: 28px;
+}
+
 .top-right {
   display: flex;
   align-items: center;
 }
 
-.top-right .content {
-  padding-left: 1em;
-}
+/* .top-right img[class="pfp"] h3 {
+  padding: 1em;
+} */
 
 .bottom-left {
   margin-top: -20px;
@@ -92,6 +98,10 @@ img[alt="profile-pic"] {
 /* Add CSS styling to the sections under the sidebar  */
 .sidebar .dashboard {
   color: #FFFFFF;
+  margin-bottom: 0.5em;
+
+  display: flex;
+  align-items: center;
 }
 
 .sidebar img[alt*="icon"] {
@@ -106,6 +116,11 @@ img[alt="profile-pic"] {
 .sidebar ul {
   color: #FFFFFF;
   list-style-type: none;
+  margin-bottom: 1em;
+}
+
+.sidebar li {
+  margin-bottom: 20px;
 }
 
 .main {
