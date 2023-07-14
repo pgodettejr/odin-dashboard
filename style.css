@@ -42,10 +42,35 @@ img[alt="profile-pic"] {
   box-shadow: 0 5px 3px #c7c9cc;
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 3fr 1fr;
 }
 
 /* Add CSS styling to the sections under the heading  */
+.top-right {
+  display: flex;
+  align-items: center;
+}
+
+.top-right .content {
+  padding-left: 1em;
+}
+
+.bottom-left {
+  margin-top: -20px;
+
+  display: flex;
+  align-items: flex-start;
+}
+
+.bottom-left .content {
+  flex: 1;
+  padding: 0 1em 0;
+}
+
+.bottom-left .img {
+  flex: 1;
+}
+
 .button-row button {
   padding: 16px 32px;
   border-radius: 28px;
