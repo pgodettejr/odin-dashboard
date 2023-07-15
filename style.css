@@ -2,14 +2,14 @@
   margin: 0;
   padding: 0;
 }
-  
+
 body {
   min-height: 100vh;
 }
 
 .container {
   display: grid;
-  grid-template: 0.5fr 3.5fr / 0.5fr 2.5fr 1fr;
+  grid-template: 0.5fr 3.725fr / 0.5fr 2.5fr 1fr;
   /* gap: 4px; */
 }
 
@@ -29,6 +29,7 @@ img[alt*="icon"] {
 img[alt="profile-pic"] {
   height: 80px;
   width: 80px;
+  border-radius: 50%;
 }
 
 /* box-shadow needs to be adjusted to better match example regardless */
@@ -37,7 +38,7 @@ img[alt="profile-pic"] {
   grid-row: 1;
   padding: 40px 30px 40px;
   margin-bottom: 4px;
-  box-shadow: 0 5px 3px #c7c9cc;
+  box-shadow: -3px 10px 5px #c7c9cc;
 
   display: grid;
   grid-template-columns: 3fr 1fr;
@@ -85,9 +86,8 @@ img[alt="profile-pic"] {
   font-weight: 700;
 }
 
-/* Try to match the blue color better with the assignment example */
 .sidebar {
-  background-color: skyblue;
+  background-color: #3882F6;
   grid-column: 1;
   grid-row: 1 / span 2;
   /* gap: 10px; */
@@ -120,9 +120,9 @@ img[alt="profile-pic"] {
   margin-bottom: 20px;
 }
 
-/* Try to match the background color better with the assignment example. ALL cards in this section need a box shadow */
+/* Try to match the background color better with the assignment example */
 .main {
-  background-color: #BCCBDE;
+  background-color: #EEE;
   grid-column: 2 / span 2;
   grid-row: 2;
   gap: 15px;
@@ -133,6 +133,10 @@ img[alt="profile-pic"] {
 
 /* Style favorite, view and share icons in the Projects cards?  */
 /* See HTML for announcement & trending card styling differences */
+
+.main .card {
+  box-shadow: 1px 5px 3px #c7c9cc;
+}
 
 .projects {
   display: grid;
@@ -201,4 +205,9 @@ img[alt="profile-pic"] {
 
 .trending .img {
   flex: 1;
+}
+
+.trending p {
+  font-size: 18px;
+  font-weight: bold;
 }
