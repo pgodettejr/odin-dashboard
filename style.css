@@ -10,7 +10,6 @@ body {
 .container {
   display: grid;
   grid-template: 0.5fr 3.725fr / 0.5fr 2.5fr 1fr;
-  /* gap: 4px; */
 }
 
 .container div {
@@ -55,10 +54,6 @@ img[alt="profile-pic"] {
   align-items: center;
 }
 
-/* .top-right img[class="pfp"] h3 {
-  padding: 1em;
-} */
-
 .bottom-left {
   margin-top: -20px;
 
@@ -90,7 +85,6 @@ img[alt="profile-pic"] {
   background-color: #3882F6;
   grid-column: 1;
   grid-row: 1 / span 2;
-  /* gap: 10px; */
 }
 
 .sidebar .dashboard {
@@ -132,8 +126,6 @@ img[alt="profile-pic"] {
 }
 
 /* Style favorite, view and share icons in the Projects cards?  */
-/* See HTML for announcement & trending card styling differences */
-
 .main .card {
   box-shadow: 1px 5px 3px #c7c9cc;
 }
@@ -186,21 +178,24 @@ img[alt="profile-pic"] {
   border-bottom: 1px solid #333;
 } */
 
-/* Modify text sizing and position text in the center; similar to bottom-left section in Heading */
 .trending .card {
   background-color: #FFFFFF;
   color: black;
   height: 300px;
   border-radius: 8px;
   margin-top: 8px;
+}
 
+.trending .card div {
   display: flex;
   align-items: flex-start;
 }
 
-.trending .content {
+/* Maybe add .trending .card here to avoid targeting issues in future revisions? */
+.content {
   flex: 1;
   padding: 0 1em 0;
+  flex-direction: column;
 }
 
 .trending .img {
