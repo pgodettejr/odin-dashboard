@@ -165,11 +165,6 @@ img[alt="profile-pic"] {
   font-weight: bold;
 }
 
-/* .announce-trends {
-  display: grid;
-  grid-template-rows: 1fr;
-} */
-
 .announcements .card {
   background-color: #FFFFFF;
   color: black;
