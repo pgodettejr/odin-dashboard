@@ -52,6 +52,11 @@ img[alt="profile-pic"] {
 .top-right {
   display: flex;
   align-items: center;
+  margin-left: -30px;
+}
+
+.top-right img {
+  padding: 0 30px;
 }
 
 .bottom-left {
